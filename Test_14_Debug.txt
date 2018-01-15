@@ -1,0 +1,103 @@
+Program Assignment: 2 
+Name: Student Values
+
+-------------------------------------------------
+
+Test14: 
+
+     memSystem mem;                     
+     mem.InitializeSystem();            
+     void *a = mem.Malloc( 0x200 );     
+     void *b = mem.Malloc( 0x200 );     
+     void *c = mem.Malloc( 0x300 );     
+     void *d = mem.Malloc( 0x300 );     
+     void *e = mem.Malloc( 0x300 );     
+     void *f = mem.Malloc( 0x400 );     
+     void *g = mem.Malloc( 0x300 );     
+     mem.dump();                        
+     mem.Free( a );                     
+     mem.Free( c );                     
+     mem.Free( f );                     
+     mem.dump();                        
+     void *r = mem.Malloc( 0x380 );     
+     mem.dump();                        
+
+------- DUMP -------------
+
+heapStart: 0x00D5DC20     
+heapEnd:   0x00D6A420 
+
+usedHead:  0x00D5EDC0     
+freeHead:  0x00D5F0D0 
+
+Heap Hdr   s: 00D5DC20  e: 00D5DC60                            size: 0x40 
+USED HDR   s: 00D5DC60  e: 00D5DC70  p: 00D5DE70  n: 00000000  size: 0x10    AF: 0 
+USED       s: 00D5DC70  e: 00D5DE70                            size: 0x200 
+USED HDR   s: 00D5DE70  e: 00D5DE80  p: 00D5E080  n: 00D5DC60  size: 0x10    AF: 0 
+USED       s: 00D5DE80  e: 00D5E080                            size: 0x200 
+USED HDR   s: 00D5E080  e: 00D5E090  p: 00D5E390  n: 00D5DE70  size: 0x10    AF: 0 
+USED       s: 00D5E090  e: 00D5E390                            size: 0x300 
+USED HDR   s: 00D5E390  e: 00D5E3A0  p: 00D5E6A0  n: 00D5E080  size: 0x10    AF: 0 
+USED       s: 00D5E3A0  e: 00D5E6A0                            size: 0x300 
+USED HDR   s: 00D5E6A0  e: 00D5E6B0  p: 00D5E9B0  n: 00D5E390  size: 0x10    AF: 0 
+USED       s: 00D5E6B0  e: 00D5E9B0                            size: 0x300 
+USED HDR   s: 00D5E9B0  e: 00D5E9C0  p: 00D5EDC0  n: 00D5E6A0  size: 0x10    AF: 0 
+USED       s: 00D5E9C0  e: 00D5EDC0                            size: 0x400 
+USED HDR   s: 00D5EDC0  e: 00D5EDD0  p: 00000000  n: 00D5E9B0  size: 0x10    AF: 0 
+USED       s: 00D5EDD0  e: 00D5F0D0                            size: 0x300 
+FREE HDR   s: 00D5F0D0  e: 00D5F0E0  p: 00000000  n: 00000000  size: 0x10    AF: 0 
+FREE       s: 00D5F0E0  e: 00D6A420                            size: 0xb340 
+
+------- DUMP -------------
+
+heapStart: 0x00D5DC20     
+heapEnd:   0x00D6A420 
+
+usedHead:  0x00D5EDC0     
+freeHead:  0x00D5DC60 
+
+Heap Hdr   s: 00D5DC20  e: 00D5DC60                            size: 0x40 
+FREE HDR   s: 00D5DC60  e: 00D5DC70  p: 00000000  n: 00D5E080  size: 0x10    AF: 0 
+FREE       s: 00D5DC70  e: 00D5DE70                            size: 0x200 
+USED HDR   s: 00D5DE70  e: 00D5DE80  p: 00D5E390  n: 00000000  size: 0x10    AF: 1 
+USED       s: 00D5DE80  e: 00D5E080                            size: 0x200 
+FREE HDR   s: 00D5E080  e: 00D5E090  p: 00D5DC60  n: 00D5E9B0  size: 0x10    AF: 0 
+FREE       s: 00D5E090  e: 00D5E390                            size: 0x300 
+USED HDR   s: 00D5E390  e: 00D5E3A0  p: 00D5E6A0  n: 00D5DE70  size: 0x10    AF: 1 
+USED       s: 00D5E3A0  e: 00D5E6A0                            size: 0x300 
+USED HDR   s: 00D5E6A0  e: 00D5E6B0  p: 00D5EDC0  n: 00D5E390  size: 0x10    AF: 0 
+USED       s: 00D5E6B0  e: 00D5E9B0                            size: 0x300 
+FREE HDR   s: 00D5E9B0  e: 00D5E9C0  p: 00D5E080  n: 00D5F0D0  size: 0x10    AF: 0 
+FREE       s: 00D5E9C0  e: 00D5EDC0                            size: 0x400 
+USED HDR   s: 00D5EDC0  e: 00D5EDD0  p: 00000000  n: 00D5E6A0  size: 0x10    AF: 1 
+USED       s: 00D5EDD0  e: 00D5F0D0                            size: 0x300 
+FREE HDR   s: 00D5F0D0  e: 00D5F0E0  p: 00D5E9B0  n: 00000000  size: 0x10    AF: 0 
+FREE       s: 00D5F0E0  e: 00D6A420                            size: 0xb340 
+
+------- DUMP -------------
+
+heapStart: 0x00D5DC20     
+heapEnd:   0x00D6A420 
+
+usedHead:  0x00D5E9B0     
+freeHead:  0x00D5DC60 
+
+Heap Hdr   s: 00D5DC20  e: 00D5DC60                            size: 0x40 
+FREE HDR   s: 00D5DC60  e: 00D5DC70  p: 00000000  n: 00D5E080  size: 0x10    AF: 0 
+FREE       s: 00D5DC70  e: 00D5DE70                            size: 0x200 
+USED HDR   s: 00D5DE70  e: 00D5DE80  p: 00D5E390  n: 00000000  size: 0x10    AF: 1 
+USED       s: 00D5DE80  e: 00D5E080                            size: 0x200 
+FREE HDR   s: 00D5E080  e: 00D5E090  p: 00D5DC60  n: 00D5ED40  size: 0x10    AF: 0 
+FREE       s: 00D5E090  e: 00D5E390                            size: 0x300 
+USED HDR   s: 00D5E390  e: 00D5E3A0  p: 00D5E6A0  n: 00D5DE70  size: 0x10    AF: 1 
+USED       s: 00D5E3A0  e: 00D5E6A0                            size: 0x300 
+USED HDR   s: 00D5E6A0  e: 00D5E6B0  p: 00D5EDC0  n: 00D5E390  size: 0x10    AF: 0 
+USED       s: 00D5E6B0  e: 00D5E9B0                            size: 0x300 
+USED HDR   s: 00D5E9B0  e: 00D5E9C0  p: 00000000  n: 00D5EDC0  size: 0x10    AF: 0 
+USED       s: 00D5E9C0  e: 00D5ED40                            size: 0x380 
+FREE HDR   s: 00D5ED40  e: 00D5ED50  p: 00D5E080  n: 00D5F0D0  size: 0x10    AF: 0 
+FREE       s: 00D5ED50  e: 00D5EDC0                            size: 0x70 
+USED HDR   s: 00D5EDC0  e: 00D5EDD0  p: 00D5E9B0  n: 00D5E6A0  size: 0x10    AF: 1 
+USED       s: 00D5EDD0  e: 00D5F0D0                            size: 0x300 
+FREE HDR   s: 00D5F0D0  e: 00D5F0E0  p: 00D5ED40  n: 00000000  size: 0x10    AF: 0 
+FREE       s: 00D5F0E0  e: 00D6A420                            size: 0xb340 

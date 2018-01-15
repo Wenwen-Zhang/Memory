@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="_UnitTest">
+      <UniqueIdentifier>{84ff05b3-49ba-46f0-83d4-9acf85cbd0e8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Memory_Tests">
+      <UniqueIdentifier>{c3ba1af1-efde-4a79-b6cc-b6b43f47cb3d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Trace">
+      <UniqueIdentifier>{9e3ef266-9ace-4973-97c1-b49c5f1574a6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Output">
+      <UniqueIdentifier>{53ebc9d3-8335-4b18-8e28-9e3d86aa48e5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="_Timer">
+      <UniqueIdentifier>{03088244-1c28-42fe-ae1c-37f475676434}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="heap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mem.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory_Tests\Mem_Stress_Tests.cpp">
+      <Filter>_Memory_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory_Tests\Mem_Test_10.cpp">
+      <Filter>_Memory_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory_Tests\Mem_Test_11.cpp">
+      <Filter>_Memory_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory_Tests\Mem_Test_12.cpp">
+      <Filter>_Memory_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory_Tests\Mem_Test_13.cpp">
+      <Filter>_Memory_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory_Tests\Mem_Test_14.cpp">
+      <Filter>_Memory_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory_Tests\Mem_Test_15.cpp">
+      <Filter>_Memory_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="UnitTest.cpp">
+      <Filter>_UnitTest</Filter>
+    </ClCompile>
+    <ClCompile Include="output.cpp">
+      <Filter>_Output</Filter>
+    </ClCompile>
+    <ClCompile Include="Trace.cpp">
+      <Filter>_Trace</Filter>
+    </ClCompile>
+    <ClCompile Include="Timer.cpp">
+      <Filter>_Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory_Tests\Mem_Test_16.cpp">
+      <Filter>_Memory_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory_Tests\Mem_Test_01.cpp">
+      <Filter>_Memory_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory_Tests\Mem_Test_02.cpp">
+      <Filter>_Memory_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory_Tests\Mem_Test_03.cpp">
+      <Filter>_Memory_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory_Tests\Mem_Test_04.cpp">
+      <Filter>_Memory_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory_Tests\Mem_Test_05.cpp">
+      <Filter>_Memory_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory_Tests\Mem_Test_06.cpp">
+      <Filter>_Memory_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory_Tests\Mem_Test_07.cpp">
+      <Filter>_Memory_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory_Tests\Mem_Test_08.cpp">
+      <Filter>_Memory_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="Memory_Tests\Mem_Test_09.cpp">
+      <Filter>_Memory_Tests</Filter>
+    </ClCompile>
+    <ClCompile Include="freeHdr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usedHdr.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="UnitTest.h">
+      <Filter>_UnitTest</Filter>
+    </ClInclude>
+    <ClInclude Include="output.h">
+      <Filter>_Output</Filter>
+    </ClInclude>
+    <ClInclude Include="Trace.h">
+      <Filter>_Trace</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsWrapper.h">
+      <Filter>_Trace</Filter>
+    </ClInclude>
+    <ClInclude Include="Timer.h">
+      <Filter>_Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="freeHdr.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="heapHdr.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mem.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="memTypes.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="usedHdr.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockType.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PA3_Memory", "PA3_Memory\PA3_Memory.vcxproj", "{4D6ED3D6-D38E-4C2D-B1DE-2A33F555B3CF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4D6ED3D6-D38E-4C2D-B1DE-2A33F555B3CF}.Debug|x86.ActiveCfg = Debug|Win32
+		{4D6ED3D6-D38E-4C2D-B1DE-2A33F555B3CF}.Debug|x86.Build.0 = Debug|Win32
+		{4D6ED3D6-D38E-4C2D-B1DE-2A33F555B3CF}.Release|x86.ActiveCfg = Release|Win32
+		{4D6ED3D6-D38E-4C2D-B1DE-2A33F555B3CF}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

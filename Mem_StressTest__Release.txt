@@ -1,0 +1,8 @@
+Program Assignment: 2 
+Name: Keenan - Sample
+
+-------------------------------------------------
+
+      Mem Lib: stress test: 68.107635 ms 
+Custom Memory: stress test: 35.725357 ms 
+              times faster: 1.906423 
